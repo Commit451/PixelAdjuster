@@ -21,6 +21,7 @@ NDK docs and support are hard to come by. These references have helped a lot in 
 - https://github.com/kikoso/android-stackblur
 - http://stackoverflow.com/questions/14398670/rotating-a-bitmap-using-jni-ndk
 - https://github.com/googlesamples/android-ndk
+
 License
 --------
 
