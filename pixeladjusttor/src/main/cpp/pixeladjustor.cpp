@@ -13,7 +13,6 @@ Java_com_commit451_pixeladjustor_PixelAdjustor_nativeAdjustBitmap(
         jobject, /* this */
         jobject bitmapOut, jint replaceColor, jint desiredColor) {
 
-    unsigned char *pixels;
     AndroidBitmapInfo info;
     int ret;
 
