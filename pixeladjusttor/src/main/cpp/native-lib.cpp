@@ -41,7 +41,11 @@ Java_com_commit451_pixeladjustor_PixelAdjustor_nativeAdjustBitmap(
 
     int i;
     for (i = info.width * info.height - 1; i >= 0; i--) {
-        src[i] = 0xffff0000;
+        //TODO check for matching, ignoring the alpha component
+        if (src[i] == replaceColor) {
+            src[i] = desiredColor;
+        }
+
     }
 
     AndroidBitmap_unlockPixels(env, bitmapOut);

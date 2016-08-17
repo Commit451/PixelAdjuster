@@ -15,7 +15,7 @@ public class JavaPixelAdjustor {
      * @param desiredColor the color desired (no alpha)
      * @return the modified bitmap
      */
-    public static Bitmap decodeWithColorReplaced(Bitmap icon, int replaceColor, int desiredColor) {
+    public static Bitmap adjustColor(Bitmap icon, int replaceColor, int desiredColor) {
         if (!icon.isMutable()) {
             throw new IllegalArgumentException("Bitmap must be mutable");
         }

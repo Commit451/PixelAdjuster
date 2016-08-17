@@ -12,7 +12,7 @@ public class PixelAdjustor {
         System.loadLibrary("native-lib");
     }
 
-    public static void adjustBitmap(Bitmap bitmap, int replaceColor, int desiredColor) {
+    public static void adjustColor(Bitmap bitmap, int replaceColor, int desiredColor) {
         nativeAdjustBitmap(bitmap, replaceColor, desiredColor);
     }
 

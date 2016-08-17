@@ -1,31 +1,19 @@
 # PixelAdjustor
 
-Morph transitions from FAB to dialog, and Button to dialog
+Changes the color of individual pixels in a Bitmap
 
-Inspired by [Plaid](https://github.com/nickbutcher/plaid)
-
-[![Build Status](https://travis-ci.org/Commit451/MorphTransitions.svg?branch=master)](https://travis-ci.org/Commit451/MorphTransitions)
-[![](https://jitpack.io/v/Commit451/MorphTransitions.svg)](https://jitpack.io/#Commit451/MorphTransitions)
+[![Build Status](https://travis-ci.org/Commit451/PixelAdjustor.svg?branch=master)](https://travis-ci.org/Commit451/PixelAdjustor)
+[![](https://jitpack.io/v/Commit451/PixelAdjustor.svg)](https://jitpack.io/#Commit451/PixelAdjustor)
 
 # Usage
 See the sample app. Typical usage:
-```java
-MorphTransform.addExtras(intent, color, dialogCornerRadius);
-ActivityOptions options =
-        ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, button,
-                getString(R.string.morph_transition));
-startActivity(intent, options.toBundle());
-```
-in the first activity, then:
-```java
-MorphTransform.setup(this, container, color, dialogCornerRadius));
-```
-in the next activity. Be sure that you override `onBackPressed()` and call `ActivityCompat.finishAfterTransition(DialogActivity.this);`
 
-In addition, be sure that your activities themes have the attribute:
-```xml
-<item name="android:windowContentTransitions">true</item>
+```java
+PixelAdjustor.adjustColor(bitmap, Color.WHITE, Color.MAGENTA);
 ```
+
+# #perfMatters
+In the sample, we compare this library vs a native Java implementation. In some very basic testing with an image of 4096x2304, we are seeing the Java implementation take 1120 ms vs the native implementation taking 92ms.
 
 # NDK
 NDK docs and support are hard to come by. These references have helped a lot in developing the NDK parts of this lib
@@ -36,7 +24,6 @@ NDK docs and support are hard to come by. These references have helped a lot in 
 License
 --------
 
-    Copyright 2015 Google, Inc
     Copyright 2016 Commit 451
 
     Licensed under the Apache License, Version 2.0 (the "License");
