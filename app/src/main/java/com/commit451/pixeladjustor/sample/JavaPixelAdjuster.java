@@ -6,7 +6,7 @@ import android.graphics.Color;
 /**
  * A java version, for comparisons sake
  */
-public class JavaPixelAdjustor {
+public class JavaPixelAdjuster {
 
     /**
      * Decodes a bitmap, replacing the color specified with the other color, while still maintaining alpha. Apparently

@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ImageView;
 
-import com.commit451.pixeladjustor.PixelAdjustor;
+import com.commit451.pixeladjuster.PixelAdjuster;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = (ImageView) findViewById(R.id.image);
 
         long startTime = System.currentTimeMillis();
-        JavaPixelAdjustor.adjustColor(image, Color.WHITE, Color.MAGENTA);
+        JavaPixelAdjuster.adjustColor(image, Color.WHITE, Color.MAGENTA);
 
         Log.d("TIMER", "Java Time taken: " + (System.currentTimeMillis() - startTime) + " ms");
         imageView.setImageBitmap(image);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Bitmap image2 = BitmapFactory.decodeResource(getResources(), R.drawable.horizon, opts);
 
         startTime = System.currentTimeMillis();
-        PixelAdjustor.adjustColor(image2, Color.WHITE, Color.MAGENTA);
+        PixelAdjuster.adjustColor(image2, Color.WHITE, Color.MAGENTA);
         Log.d("TIMER", "Native Time taken: " + (System.currentTimeMillis() - startTime) + " ms");
         nativeImageView.setImageBitmap(image2);
     }
