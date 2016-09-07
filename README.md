@@ -2,8 +2,8 @@
 
 Changes the color of individual pixels in a Bitmap
 
-[![Build Status](https://travis-ci.org/Commit451/PixelAdjustor.svg?branch=master)](https://travis-ci.org/Commit451/PixelAdjustor)
-[![](https://jitpack.io/v/Commit451/PixelAdjustor.svg)](https://jitpack.io/#Commit451/PixelAdjustor)
+[![Build Status](https://travis-ci.org/Commit451/PixelAdjuster.svg?branch=master)](https://travis-ci.org/Commit451/PixelAdjuster)
+[![](https://jitpack.io/v/Commit451/PixelAdjuster.svg)](https://jitpack.io/#Commit451/PixelAdjuster)
 
 # Usage
 See the sample app. Typical usage:
