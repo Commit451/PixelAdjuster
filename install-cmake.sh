@@ -20,4 +20,3 @@ sed -i -- 's/CMAKE_VERSION_MAJOR/'"$VERSION_MAJOR"'/g' package.xml
 sed -i -- 's/CMAKE_VERSION_MINOR/'"$VERSION_MINOR"'/g' package.xml
 sed -i -- 's/CMAKE_VERSION_MICRO/'"$VERSION_MICRO"'/g' package.xml
 mv package.xml ${DIRECTORY}
-rm package.xml--
