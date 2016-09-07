@@ -10,7 +10,7 @@ PACKAGE_XML_URL="https://dl.dropboxusercontent.com/u/18415572/package.xml"
 wget https://dl.google.com/android/repository/${NAME}.zip
 DIRECTORY=${ANDROID_HOME}/cmake/${VERSION}
 mkdir -p ${DIRECTORY}
-tar -xzf ${NAME}.zip --directory ${DIRECTORY}
+unzip ${NAME}.zip -d ${DIRECTORY}
 rm ${NAME}.zip
 # Now, in order to trick gradle into believing that we have installed
 # through the official means, we need to include a package.xml file
