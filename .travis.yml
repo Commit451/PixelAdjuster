@@ -11,14 +11,10 @@ android:
     - android-24
     - extra-android-m2repository
 
-addons:
-  apt:
-    packages:
-    - libstdc++6
-
 before_install:
+  # By default, we get an older version of libstdc++6 so we need to update it
   - sudo apt-get update
-  - sudo apt-get upgrade
+  - sudo apt-get install -y libstdc++6
   - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
   - export ANDROID_NDK_HOME=$HOME/android-ndk-root
   - ./install-cmake.sh
