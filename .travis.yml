@@ -17,6 +17,8 @@ addons:
     - libstdc++6
 
 before_install:
+  - sudo apt-get update
+  - sudo apt-get upgrade
   - git clone https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
   - export ANDROID_NDK_HOME=$HOME/android-ndk-root
   - ./install-cmake.sh
@@ -26,4 +28,4 @@ before_script:
 
 script: "./gradlew build"
 
-sudo: false
+sudo: required
