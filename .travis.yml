@@ -21,7 +21,7 @@ before_install:
   - export ANDROID_NDK_HOME=$HOME/android-ndk-root
   - wget https://github.com/Commit451/android-cmake-installer/releases/download/1.1.0/install-cmake.sh
   - chmod +x install-cmake.sh
-  - ./install-cmake.sh -d
+#  - ./install-cmake.sh -d
 
 before_script:
     - chmod +x gradlew
