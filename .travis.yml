@@ -21,6 +21,7 @@ before_install:
   - export ANDROID_NDK_HOME=$HOME/android-ndk-root
 
 before_script:
+    - ./$ANDROID_HOME/tools/bin/sdkmanager cmake;3.6.3155560
     - chmod +x gradlew
 
 script: "./gradlew build"
