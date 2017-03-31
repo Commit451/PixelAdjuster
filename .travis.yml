@@ -7,7 +7,7 @@ android:
   components:
     - platform-tools
     - tools
-    - toools #https://github.com/travis-ci/travis-ci/issues/6040#issuecomment-219367943
+    - tools #https://github.com/travis-ci/travis-ci/issues/6040#issuecomment-219367943
     - build-tools-25.0.2
     - android-25
     - extra-android-m2repository
