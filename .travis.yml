@@ -3,8 +3,21 @@ language: android
 jdk:
   - oraclejdk8
 
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - libstdc++6
+
 before_install:
   - mkdir "$ANDROID_HOME/licenses" || true
   - echo "d56f5187479451eabf01fb78af6dfcb131a6481e" > "$ANDROID_HOME/licenses/android-sdk-license"
+  # Install the NDK.
+  - pushd ~
+  - wget http://dl.google.com/android/repository/android-ndk-r17b-linux-x86_64.zip
+  - unzip -qo android-ndk-r17b-linux-x86_64.zip
+  - export ANDROID_NDK_HOME="$HOME/android-ndk-r17b"
+  - popd
 
 script: "./gradlew build"
