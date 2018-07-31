@@ -1,21 +1,19 @@
 # PixelAdjustor
-
 Changes the color of individual pixels in a Bitmap
 
 [![Build Status](https://travis-ci.org/Commit451/PixelAdjuster.svg?branch=master)](https://travis-ci.org/Commit451/PixelAdjuster)
-[![](https://jitpack.io/v/Commit451/PixelAdjuster.svg)](https://jitpack.io/#Commit451/PixelAdjuster)
 
-# Usage
+## Usage
 See the sample app. Typical usage:
 
 ```java
 PixelAdjustor.adjustColor(bitmap, Color.WHITE, Color.MAGENTA);
 ```
 
-# #perfMatters
+## #perfMatters
 In the sample, we compare this library vs a native Java implementation. In some very basic testing with an image of 4096x2304, we are seeing the Java implementation take 1120 ms vs the native implementation taking 92ms.
 
-# NDK
+## NDK
 NDK docs and support are hard to come by. These references have helped a lot in developing the NDK parts of this lib
 
 - https://github.com/kikoso/android-stackblur
@@ -25,7 +23,7 @@ NDK docs and support are hard to come by. These references have helped a lot in 
 License
 --------
 
-    Copyright 2016 Commit 451
+    Copyright 2018 Commit 451
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

@@ -11,6 +11,7 @@ public class JavaPixelAdjuster {
     /**
      * Decodes a bitmap, replacing the color specified with the other color, while still maintaining alpha. Apparently
      * you cannot really do this with Color filters :(
+     *
      * @param replaceColor the color to replace (no alpha)
      * @param desiredColor the color desired (no alpha)
      * @return the modified bitmap

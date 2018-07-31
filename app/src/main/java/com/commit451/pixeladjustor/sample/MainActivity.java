@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         opts.inMutable = true;
         Bitmap image = BitmapFactory.decodeResource(getResources(), R.drawable.horizon, opts);
 
-        ImageView imageView = (ImageView) findViewById(R.id.image);
+        ImageView imageView = findViewById(R.id.image);
 
         long startTime = System.currentTimeMillis();
         JavaPixelAdjuster.adjustColor(image, Color.WHITE, Color.MAGENTA);
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("TIMER", "Java Time taken: " + (System.currentTimeMillis() - startTime) + " ms");
         imageView.setImageBitmap(image);
 
-        ImageView nativeImageView = (ImageView) findViewById(R.id.natively_processed_image);
+        ImageView nativeImageView = findViewById(R.id.natively_processed_image);
 
         Bitmap image2 = BitmapFactory.decodeResource(getResources(), R.drawable.horizon, opts);
 
