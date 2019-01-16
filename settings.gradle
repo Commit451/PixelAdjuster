@@ -1,1 +1,1 @@
-include ':app', ':pixeladjusttor'
+include ':app', ':pixeladjuster'

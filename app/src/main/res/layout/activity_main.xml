@@ -17,15 +17,27 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textKotlin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
         <ImageView
-            android:id="@+id/image"
+            android:id="@+id/imageKotlin"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_gravity="center"/>
 
+        <TextView
+            android:id="@+id/textNdk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
         <ImageView
-            android:id="@+id/natively_processed_image"
+            android:id="@+id/imageNdk"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
